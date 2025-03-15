@@ -18,3 +18,21 @@ window.onbeforeunload = () => {
     form.reset();
   }
 };
+
+document.querySelectorAll(".faq-question").forEach(item => {
+  item.addEventListener("click", () => {
+    let answer = item.nextElementSibling;
+    answer.style.display = answer.style.display === "block" ? "none" : "block";
+  });
+});
+
+
+const toggle = document.getElementById("dark-mode-toggle");
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+});
+
+if (localStorage.getItem("darkMode") === "true") {
+    document.body.classList.add("dark-mode");
+}

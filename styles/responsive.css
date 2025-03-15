@@ -123,3 +123,21 @@
     font-size: 0.7rem;
   }
 }
+
+.frameworks-slider {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.framework-logo {
+  width: 100px;
+  height: auto;
+  transition: transform 0.1s ease-in-out;
+}
+
+.framework-logo:hover {
+  transform: scale(1.2);
+}
+

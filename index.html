@@ -19,11 +19,11 @@
             <ul style="list-style: none; display: flex; gap: 50px; padding: 5; margin: 5;">
               <li><a href="#services" style="color: white; text-decoration: none;">Bidang</a></li>
               <li><a href="#portfolios" style="color: white; text-decoration: none;">Portfolio</a></li>
-              <li><a href="#skills" style="color: white; text-decoration: none;">Skills</a></li>
+              <li><a href="#frameworks" style="color: white; text-decoration: none;">Skills</a></li>
               <li><a href="#contact" style="color: white; text-decoration: none;">Contact Me</a></li>
               <li>
                 <a href="11_XI RPL C_Naufal Azka_CEVE.pdf" target="_blank">
-                  <button class="btn" style="background-color: white; color: #7e74f1; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold;">CV LENGKAP</button>
+                  <button class="btn" style="background-color: white; color: #7e74f1; padding: 10px 15px; border-radius: 15px; cursor: pointer; font-weight: bold;">CV LENGKAP</button>
                 </a>
               </li>
             </ul>
@@ -39,8 +39,8 @@
     </header>
     
     <section id="hero" style="display: flex; justify-content: space-between; align-items: center; padding: 50px; color: black; background-color: white;">
-      <div class="hero-left" style="max-width: 50%;">
-        <h3>My name is</h3>
+      <div class="hero-left" style="max-width: 50%;" data-aos="fade-up">
+        <h3 style="color: #7e74f1;" class="pre-title">My name is</h3>
         <h1 class="hero-name" style="font-size: 36px; font-weight: bold;">Naufal <span style="color: yellow;">Azka</span> Annahl</h1>
         <p>
           Saya adalah seorang Front-End Developer dengan pengalaman belajar selama 2 tahun. 
@@ -48,9 +48,12 @@
           serta memiliki keahlian dalam pengembangan aplikasi Android menggunakan Android Studio. 
           Selain itu, saya juga memiliki keterampilan dalam UI/UX Design.
         </p>
+        <a href="#portfolios" style="text-decoration: none;">
+          <button class="btn" style="background-color: #7e74f1; color: white; border: none; padding: 15px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 20px;">PORTOFOLIO</button>
+        </a>
       </div>
     
-      <div class="hero-right" style="max-width: 40%;">
+      <div class="hero-right" style="max-width: 40%;" data-aos="fade-up">
         <img src="./images/hero.svg" alt="Person Standing" style="width: 100%; border-radius: 10px;" />
       </div>
     </section>
@@ -295,28 +298,23 @@
               </div>
             </div>
           </div>
-
-          <div class="skills-right">
-            <p>
-              Selama 2 tahun, saya secara konsisten mendalami bidang front-end dan terus bereksperimen dengan berbagai teknologi serta framework terbaru. 
-              Dalam perjalanan ini, saya telah mempelajari berbagai keterampilan yang mendukung 
-              pengembangan antarmuka pengguna yang modern, responsif, dan interaktif.
-            </p>
-
-            <div class="skills-list">
-              <ul>
-                <li>Boostrap</li>
-                <li>Node JS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>Android Studio</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </section>
     <!-- End Skills & Education  -->
+
+    <!-- Frameworks Section -->
+  <section id="frameworks" style="padding: 40px 0; text-align: center;">
+    <h2 style="margin-bottom: 20px;">Frameworks</h2>
+    <div class="frameworks-slider">
+      <div><img src="./images/portfolios/bootsrap.png" alt="Bootstrap" class="framework-logo"></div>
+      <div><img src="./images/portfolios/node.jpeg" alt="Node.js" class="framework-logo"></div>
+      <div><img src="./images/portfolios/js.png" alt="JavaScript" class="framework-logo"></div>
+      <div><img src="./images/portfolios/figma.jpeg" alt="Figma" class="framework-logo"></div>
+      <div><img src="./images/portfolios/AndroidStudio.jpeg" alt="Android Studio" class="framework-logo"></div>
+    </div>
+  </section>
+
 
     <!-- Contact -->
     <section id="contact">
@@ -384,39 +382,79 @@
     </section>
     <!-- End Contact -->
 
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/6287735300775" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; padding: 15px; border-radius: 50%; text-align: center; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); font-size: 24px;">
+  📲
+</a>
+
     <!-- Footer -->
-    <footer>
-      <div class="footer-icons">
-        <a href="https://www.instagram.com/naup4ll/" target="_blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
-            />
-          </svg>
-        </a>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
 
-        <a href="https://github.com/Delayyy14" target="_blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-            />
-          </svg>
-        </a>
+
+      <!-- Akses Cepat -->
+      <div class="footer-section">
+        <h3>Akses Cepat</h3>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="https://wa.me/6287735300775" target="_blank">Hubungi Kami</a></li>
+        </ul>
       </div>
-      <p>&#169; 2025 - Made by Naufal Azka</p>
-    </footer>
-    <!-- End Footer -->
 
-    <script src="js/main.js"></script>
+      <!-- Help -->
+      <div class="footer-section">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#portfolios">Portofolio</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="artikel.html">Artikel</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/naup4ll/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="white"
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+
+          <a href="https://github.com/Delayyy14" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="white"
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <p class="footer-copyright">&#169; 2025 - Made by Naufal Azka</p>
+  </div>
+</footer>
+<!-- End Footer -->
+
+
+    <script 
+    src="https://unpkg.com/aos@2.3.1/dist/aos.js",
+
+    src="js/main.js">
+     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        const target = document.querySelector(targetId);
+  
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });</script>
+    
   </body>
 </html>
